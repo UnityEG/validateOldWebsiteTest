@@ -1,6 +1,1 @@
-<?php 
-
-
-
-echo `mkdir test123`;
-//echo `git pull`;
+<?php echo `git pull`;
