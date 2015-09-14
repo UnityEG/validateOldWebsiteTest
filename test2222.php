@@ -1,4 +1,5 @@
 <?php
+echo `mkdir xyz`;
 // gdsfj sdjhfgds fjd fjhg fjs//
 /*
  * aDADAS
