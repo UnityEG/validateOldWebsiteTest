@@ -1,0 +1,389 @@
+[20-Jun-2015 18:09:44 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/212a8946da4baf318b4fd2287827c336 on line 15
+[20-Jun-2015 18:09:46 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/212a8946da4baf318b4fd2287827c336 on line 15
+[20-Jun-2015 18:09:48 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/212a8946da4baf318b4fd2287827c336 on line 15
+[20-Jun-2015 18:13:01 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/212a8946da4baf318b4fd2287827c336 on line 15
+[20-Jun-2015 18:13:03 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/212a8946da4baf318b4fd2287827c336 on line 15
+[20-Jun-2015 18:13:05 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/212a8946da4baf318b4fd2287827c336 on line 15
+[20-Jun-2015 18:13:22 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/212a8946da4baf318b4fd2287827c336 on line 15
+[20-Jun-2015 18:13:54 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/212a8946da4baf318b4fd2287827c336 on line 15
+[20-Jun-2015 18:14:35 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/0b592b8fc756ade11c4e8b69bf8718cd on line 15
+[20-Jun-2015 18:18:18 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/212a8946da4baf318b4fd2287827c336 on line 15
+[20-Jun-2015 18:18:20 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/212a8946da4baf318b4fd2287827c336 on line 15
+[20-Jun-2015 18:18:22 UTC] PHP Fatal error:  Class 'merchant' not found in /home11/validate/public_html/validate/app/storage/views/212a8946da4baf318b4fd2287827c336 on line 15
+[28-Jun-2015 23:09:21 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 126091264 bytes) in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 513
+[28-Jun-2015 23:09:24 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 126091264 bytes) in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 513
+[28-Jun-2015 23:09:29 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 126091264 bytes) in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 513
+[28-Jun-2015 23:11:11 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 126091264 bytes) in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 513
+[28-Jun-2015 23:12:46 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 126091264 bytes) in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 513
+[28-Jun-2015 23:12:49 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 126091264 bytes) in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Support/helpers.php on line 513
+[29-Jun-2015 19:41:52 UTC] PHP Fatal error:  Class 'Rule' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 6663
+[29-Jun-2015 20:33:06 UTC] PHP Fatal error:  Class 'Rule' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 6663
+[29-Jun-2015 20:33:24 UTC] PHP Fatal error:  Class 'Rule' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 6663
+[29-Jun-2015 20:35:21 UTC] PHP Fatal error:  Class 'Rule' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 6663
+[29-Jun-2015 20:53:30 UTC] PHP Fatal error:  Class 'Rule' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 6663
+[02-Jul-2015 21:22:26 UTC] PHP Fatal error:  Class 'Rule' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 6663
+[03-Jul-2015 05:25:35 Australia/Perth] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home11/validate/public_html/test/vendor/composer/autoload_classmap.php on line 738
+[03-Jul-2015 05:25:42 Australia/Perth] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or '$' in /home11/validate/public_html/test/vendor/composer/autoload_classmap.php on line 1625
+[02-Jul-2015 21:25:49 UTC] PHP Fatal error:  Class 'UsersRulesLink' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 6638
+[03-Jul-2015 06:33:29 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home11/validate/public_html/test/app/storage/views/423e8b1b25e4673b34e12eef4006d46c on line 11
+[04-Jul-2015 22:40:57 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home11/validate/public_html/test/app/controllers/UsersControllers/CustomerController.php on line 33
+[04-Jul-2015 22:43:28 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/UsersControllers/CustomerController.php on line 33
+[06-Jul-2015 16:35:53 UTC] PHP Fatal error:  Class 'Facebook' not found in /home11/validate/public_html/test/app/controllers/LoginSteps.php on line 63
+[08-Jul-2015 13:24:17 UTC] PHP Fatal error:  Call to a member function rules() on a non-object in /home11/validate/public_html/test/app/filters/CustomerFilters.php on line 86
+[09-Jul-2015 21:35:38 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[09-Jul-2015 21:36:49 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[09-Jul-2015 22:26:47 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[10-Jul-2015 03:24:29 UTC] PHP Parse error:  syntax error, unexpected 'between' (T_STRING), expecting ')' in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 251
+[10-Jul-2015 16:56:34 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[10-Jul-2015 19:58:49 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[10-Jul-2015 19:59:02 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[10-Jul-2015 20:40:54 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[10-Jul-2015 20:55:46 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[10-Jul-2015 21:01:33 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[10-Jul-2015 21:01:42 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[10-Jul-2015 21:32:31 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[10-Jul-2015 22:29:29 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[10-Jul-2015 22:30:28 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[10-Jul-2015 22:39:23 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[10-Jul-2015 22:40:44 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[10-Jul-2015 22:42:31 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[10-Jul-2015 22:44:20 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[10-Jul-2015 22:59:03 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/storage/views/25ad8f1dee4500b7cfd2e4f54d78972e on line 61
+[10-Jul-2015 22:59:05 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/storage/views/25ad8f1dee4500b7cfd2e4f54d78972e on line 61
+[10-Jul-2015 22:59:08 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/storage/views/25ad8f1dee4500b7cfd2e4f54d78972e on line 61
+[10-Jul-2015 22:59:22 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/storage/views/25ad8f1dee4500b7cfd2e4f54d78972e on line 61
+[11-Jul-2015 02:34:08 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[11-Jul-2015 02:34:13 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[11-Jul-2015 10:43:58 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[11-Jul-2015 12:50:05 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[11-Jul-2015 12:50:07 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[11-Jul-2015 12:50:09 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[11-Jul-2015 12:50:12 UTC] PHP Fatal error:  Call to a member function hasRule() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 26
+[11-Jul-2015 14:04:54 UTC] PHP Fatal error:  Class 'returnRedirect' not found in /home11/validate/public_html/test/app/global/g.php on line 8
+[11-Jul-2015 14:11:40 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[11-Jul-2015 14:18:14 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[11-Jul-2015 14:23:43 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[11-Jul-2015 14:25:57 UTC] PHP Fatal error:  Call to a member function users() on a non-object in /home11/validate/public_html/test/app/controllers/UsersControllers/UserController.php on line 276
+[11-Jul-2015 14:32:33 UTC] PHP Fatal error:  Using $this when not in object context in /home11/validate/public_html/test/app/global/g.php on line 11
+[11-Jul-2015 14:32:35 UTC] PHP Fatal error:  Using $this when not in object context in /home11/validate/public_html/test/app/global/g.php on line 11
+[11-Jul-2015 14:32:37 UTC] PHP Fatal error:  Using $this when not in object context in /home11/validate/public_html/test/app/global/g.php on line 11
+[11-Jul-2015 14:33:26 UTC] PHP Fatal error:  Call to undefined function has() in /home11/validate/public_html/test/app/global/g.php on line 11
+[11-Jul-2015 14:52:24 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/global/g.php on line 5
+[11-Jul-2015 20:16:31 UTC] PHP Fatal error:  Call to undefined method g::hasOrBack() in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 102
+[11-Jul-2015 20:16:33 UTC] PHP Fatal error:  Call to undefined method g::hasOrBack() in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 102
+[11-Jul-2015 20:16:34 UTC] PHP Fatal error:  Call to undefined method g::hasOrBack() in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 102
+[11-Jul-2015 20:16:36 UTC] PHP Fatal error:  Call to undefined method g::hasOrBack() in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 102
+[11-Jul-2015 20:17:28 UTC] PHP Parse error:  syntax error, unexpected 'Redirect' (T_STRING) in /home11/validate/public_html/test/app/global/g.php on line 16
+[11-Jul-2015 20:17:39 UTC] PHP Fatal error:  Call to undefined function has() in /home11/validate/public_html/test/app/global/g.php on line 13
+[11-Jul-2015 20:22:21 UTC] PHP Parse error:  syntax error, unexpected 'g' (T_STRING) in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 102
+[11-Jul-2015 20:22:22 UTC] PHP Parse error:  syntax error, unexpected 'g' (T_STRING) in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 102
+[11-Jul-2015 20:22:24 UTC] PHP Parse error:  syntax error, unexpected 'g' (T_STRING) in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 102
+[11-Jul-2015 20:22:26 UTC] PHP Parse error:  syntax error, unexpected 'g' (T_STRING) in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 102
+[11-Jul-2015 20:22:43 UTC] PHP Parse error:  syntax error, unexpected 'g' (T_STRING) in /home11/validate/public_html/test/app/controllers/GiftVouchersParameterController.php on line 102
+[11-Jul-2015 20:57:01 UTC] PHP Fatal error:  Undefined class constant 'isDeveloper' in /home11/validate/public_html/test/app/storage/views/055db26e59d0fc9fbc82af17f34f0d10 on line 13
+[11-Jul-2015 20:57:03 UTC] PHP Fatal error:  Undefined class constant 'isDeveloper' in /home11/validate/public_html/test/app/storage/views/055db26e59d0fc9fbc82af17f34f0d10 on line 13
+[11-Jul-2015 20:57:05 UTC] PHP Fatal error:  Undefined class constant 'isDeveloper' in /home11/validate/public_html/test/app/storage/views/055db26e59d0fc9fbc82af17f34f0d10 on line 13
+[11-Jul-2015 20:57:07 UTC] PHP Fatal error:  Undefined class constant 'isDeveloper' in /home11/validate/public_html/test/app/storage/views/055db26e59d0fc9fbc82af17f34f0d10 on line 13
+[11-Jul-2015 20:57:24 UTC] PHP Parse error:  syntax error, unexpected end of file in /home11/validate/public_html/test/app/storage/views/055db26e59d0fc9fbc82af17f34f0d10 on line 70
+[11-Jul-2015 20:57:43 UTC] PHP Parse error:  syntax error, unexpected end of file in /home11/validate/public_html/test/app/storage/views/055db26e59d0fc9fbc82af17f34f0d10 on line 70
+[11-Jul-2015 20:57:52 UTC] PHP Parse error:  syntax error, unexpected end of file in /home11/validate/public_html/test/app/storage/views/055db26e59d0fc9fbc82af17f34f0d10 on line 70
+[12-Jul-2015 20:14:12 UTC] PHP Fatal error:  Class 'BaseFilter' not found in /home11/validate/public_html/test/app/filters/MerchantFilters.php on line 8
+[13-Jul-2015 00:18:36 UTC] PHP Parse error:  syntax error, unexpected ';' in /home11/validate/public_html/test/app/storage/views/6fd671137fb03d32827b8e52faaef15a on line 94
+[13-Jul-2015 00:19:39 UTC] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY) in /home11/validate/public_html/test/app/storage/views/6fd671137fb03d32827b8e52faaef15a on line 94
+[13-Jul-2015 09:24:11 UTC] PHP Parse error:  syntax error, unexpected '{' in /home11/validate/public_html/test/app/controllers/GiftVoucherValidationController.php on line 15
+[13-Jul-2015 09:28:33 UTC] PHP Parse error:  syntax error, unexpected '{' in /home11/validate/public_html/test/app/controllers/GiftVoucherValidationController.php on line 15
+[13-Jul-2015 09:31:33 UTC] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in /home11/validate/public_html/test/app/controllers/GiftVoucherValidationController.php on line 15
+[13-Jul-2015 09:36:21 UTC] PHP Fatal error:  Cannot redeclare GiftVoucherValidationController::$route in /home11/validate/public_html/test/app/controllers/GiftVoucherValidationController.php on line 6
+[13-Jul-2015 09:36:23 UTC] PHP Fatal error:  Cannot redeclare GiftVoucherValidationController::$route in /home11/validate/public_html/test/app/controllers/GiftVoucherValidationController.php on line 6
+[14-Jul-2015 05:09:03 Australia/Perth] PHP Parse error:  syntax error, unexpected ''Symfony\\Component\\Security\' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home11/validate/public_html/test/vendor/composer/autoload_classmap.php on line 1502
+[14-Jul-2015 05:10:20 Australia/Perth] PHP Parse error:  syntax error, unexpected ''/facebook/php-sdk-v4/src/Face' (T_ENCAPSED_AND_WHITESPACE) in /home11/validate/public_html/test/vendor/composer/autoload_classmap.php on line 1654
+[14-Jul-2015 05:11:23 Australia/Perth] PHP Parse error:  syntax error, unexpected ''/laravel/framework/src/Illumi' (T_ENCAPSED_AND_WHITESPACE) in /home11/validate/public_html/test/vendor/composer/autoload_classmap.php on line 266
+[14-Jul-2015 05:11:29 Australia/Perth] PHP Parse error:  syntax error, unexpected ''/monolog/monolog/src/Monolog/' (T_ENCAPSED_AND_WHITESPACE) in /home11/validate/public_html/test/vendor/composer/autoload_classmap.php on line 455
+[14-Jul-2015 05:11:37 Australia/Perth] PHP Parse error:  syntax error, unexpected ''Symfony\\Component' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home11/validate/public_html/test/vendor/composer/autoload_classmap.php on line 1185
+[14-Jul-2015 05:11:41 Australia/Perth] PHP Parse error:  syntax error, unexpected ''Symfony\\Component\\S' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home11/validate/public_html/test/vendor/composer/autoload_classmap.php on line 1519
+[15-Jul-2015 21:32:20 UTC] PHP Parse error:  syntax error, unexpected ';' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 10
+[20-Jul-2015 23:20:00 UTC] PHP Parse error:  syntax error, unexpected ',' in /home11/validate/public_html/test/app/routes.php on line 109
+[20-Jul-2015 23:20:30 UTC] PHP Parse error:  syntax error, unexpected ',' in /home11/validate/public_html/test/app/routes.php on line 109
+[20-Jul-2015 23:20:33 UTC] PHP Parse error:  syntax error, unexpected ',' in /home11/validate/public_html/test/app/routes.php on line 109
+[21-Jul-2015 00:47:01 UTC] PHP Parse error:  syntax error, unexpected 'a' (T_STRING) in /home11/validate/public_html/test/app/storage/views/423e8b1b25e4673b34e12eef4006d46c on line 26
+[21-Jul-2015 06:57:48 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home11/validate/public_html/test/app/storage/views/25ad8f1dee4500b7cfd2e4f54d78972e on line 86
+[21-Jul-2015 07:24:20 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home11/validate/public_html/test/app/storage/views/25ad8f1dee4500b7cfd2e4f54d78972e on line 124
+[21-Jul-2015 19:51:02 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 19:51:06 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 19:57:57 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 19:57:59 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 19:58:13 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 19:58:20 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 20:00:02 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 20:00:09 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 20:00:11 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 20:05:56 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 20:05:58 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 20:25:07 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 20:25:12 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 20:27:33 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 20:27:47 UTC] PHP Fatal error:  Class 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider' not found in /home11/validate/public_html/test/bootstrap/compiled.php on line 4485
+[21-Jul-2015 23:35:21 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:75
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(75): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 75, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 75
+[21-Jul-2015 23:35:21 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 75
+[22-Jul-2015 14:22:02 UTC] PHP Parse error:  syntax error, unexpected '$group' (T_VARIABLE) in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 210
+[22-Jul-2015 14:22:15 UTC] PHP Parse error:  syntax error, unexpected '$group' (T_VARIABLE) in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 210
+[22-Jul-2015 21:39:58 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:83
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(83): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 83, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 83
+[22-Jul-2015 21:39:58 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 83
+[23-Jul-2015 22:19:58 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home11/validate/public_html/test/app/controllers/CartController.php on line 14
+[24-Jul-2015 03:47:46 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:83
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(83): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 83, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 83
+[24-Jul-2015 03:47:46 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 83
+[24-Jul-2015 03:47:56 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:83
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(83): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 83, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 83
+[24-Jul-2015 03:47:56 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 83
+[24-Jul-2015 08:46:49 UTC] PHP Parse error:  syntax error, unexpected ';' in /home11/validate/public_html/test/app/storage/views/423e8b1b25e4673b34e12eef4006d46c on line 23
+[24-Jul-2015 08:52:11 UTC] PHP Parse error:  syntax error, unexpected '{' in /home11/validate/public_html/test/app/storage/views/423e8b1b25e4673b34e12eef4006d46c on line 25
+[24-Jul-2015 20:21:20 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:83
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(83): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 83, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 83
+[24-Jul-2015 20:21:20 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 83
+[24-Jul-2015 20:22:04 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:83
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(83): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 83, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 83
+[24-Jul-2015 20:22:04 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 83
+[24-Jul-2015 21:50:19 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 21:54:42 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:02:20 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:04:22 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:07:07 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:10:06 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:25:52 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:25:55 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:26:11 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:26:22 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:26:24 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:26:31 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:28:18 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:31:26 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:33:22 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:33:26 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:40:13 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:41:53 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:42:02 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:42:24 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 22:44:39 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[24-Jul-2015 23:27:39 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 00:46:51 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 00:52:45 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 00:56:38 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 01:01:32 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 08:27:23 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 08:36:57 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 10:28:27 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 10:31:52 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 10:31:54 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 10:32:17 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 10:32:19 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 10:33:50 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/controllers/PaypalController.php on line 112
+[25-Jul-2015 19:43:35 UTC] PHP Fatal error:  Cannot redeclare qrcodepng() (previously declared in /home11/validate/public_html/test/public/voucher/s_functions.php:3) in /home11/validate/public_html/test/public/voucher/s_functions.php on line 24
+[25-Jul-2015 19:43:44 UTC] PHP Fatal error:  Cannot redeclare qrcodepng() (previously declared in /home11/validate/public_html/test/public/voucher/s_functions.php:3) in /home11/validate/public_html/test/public/voucher/s_functions.php on line 24
+[25-Jul-2015 19:43:49 UTC] PHP Fatal error:  Cannot redeclare qrcodepng() (previously declared in /home11/validate/public_html/test/public/voucher/s_functions.php:3) in /home11/validate/public_html/test/public/voucher/s_functions.php on line 24
+[26-Jul-2015 01:55:51 UTC] PHP Fatal error:  Call to undefined function formatVoucherCode() in /home11/validate/public_html/test/app/views/GiftVoucher/voucherTest.php on line 42
+[26-Jul-2015 01:55:54 UTC] PHP Fatal error:  Call to undefined function formatVoucherCode() in /home11/validate/public_html/test/app/views/GiftVoucher/voucherTest.php on line 42
+[26-Jul-2015 09:11:14 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:84
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(84): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 84, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 09:11:14 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 09:11:26 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:84
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(84): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 84, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 09:11:26 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 09:27:35 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:84
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(84): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 84, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 09:27:35 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 09:27:47 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:84
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(84): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 84, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 09:27:47 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 09:27:59 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:84
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(84): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 84, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 09:27:59 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 09:36:13 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: group' in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd:84
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd(84): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 84, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/valida in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 09:36:13 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home11/validate/public_html/test/app/storage/views/7ff36392156d0765da737949516511bd on line 84
+[26-Jul-2015 20:34:42 UTC] PHP Parse error:  syntax error, unexpected 'Select' (T_STRING), expecting ')' in /home11/validate/public_html/test/app/storage/views/0f2984d85360a3219c571f3e7d8b7152 on line 13
+[26-Jul-2015 20:42:55 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home11/validate/public_html/test/app/storage/views/0f2984d85360a3219c571f3e7d8b7152 on line 82
+[26-Jul-2015 20:54:56 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home11/validate/public_html/test/app/storage/views/0f2984d85360a3219c571f3e7d8b7152 on line 8
+[26-Jul-2015 20:56:11 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home11/validate/public_html/test/app/storage/views/0f2984d85360a3219c571f3e7d8b7152 on line 8
+[26-Jul-2015 20:56:48 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in /home11/validate/public_html/test/app/storage/views/0f2984d85360a3219c571f3e7d8b7152 on line 8
+[26-Jul-2015 21:14:02 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in /home11/validate/public_html/test/app/storage/views/0f2984d85360a3219c571f3e7d8b7152 on line 8
+[26-Jul-2015 22:17:33 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:17:42 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:18:57 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:19:22 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:22:09 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:22:11 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:29:28 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:33:03 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:33:05 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:37:14 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:37:22 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:37:22 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:37:38 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:37:41 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:39:48 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:43:25 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:43:27 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:43:35 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[26-Jul-2015 22:45:11 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157
+[31-Jul-2015 00:20:35 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home11/validate/public_html/test/app/storage/views/4bbc96c2319fdad4249160f21e30e0df on line 58
+[31-Jul-2015 03:56:39 UTC] PHP Parse error:  syntax error, unexpected 'submit' (T_STRING), expecting ')' in /home11/validate/public_html/test/app/storage/views/59a01b732b7839a3f36b3f34c38abaf0 on line 98
+[31-Jul-2015 04:24:00 UTC] PHP Parse error:  syntax error, unexpected '.' in /home11/validate/public_html/test/app/storage/views/59a01b732b7839a3f36b3f34c38abaf0 on line 99
+[31-Jul-2015 07:21:03 UTC] PHP Fatal error:  Call to undefined method Illuminate\Mail\Mailer::raw() in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 214
+[31-Jul-2015 07:30:06 UTC] PHP Fatal error:  Call to undefined method Illuminate\Mail\Mailer::mail() in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 214
+[31-Jul-2015 07:48:39 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home11/validate/public_html/test/app/controllers/ContactController.php on line 40
+[31-Jul-2015 07:51:12 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home11/validate/public_html/test/app/controllers/ContactController.php on line 40
+[31-Jul-2015 07:51:51 UTC] PHP Parse error:  syntax error, unexpected '{' in /home11/validate/public_html/test/app/controllers/ContactController.php on line 44
+[31-Jul-2015 07:53:10 UTC] PHP Fatal error:  Class 'SmtpTransport' not found in /home11/validate/public_html/test/app/controllers/ContactController.php on line 29
+[31-Jul-2015 07:56:10 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: mailer' in /home11/validate/public_html/test/app/controllers/ContactController.php:54
+Stack trace:
+#0 /home11/validate/public_html/test/app/controllers/ContactController.php(54): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 54, Array)
+#1 [internal function]: ContactController->index()
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(231): call_user_func_array(Array, Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('index', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(ContactController), Object(Illuminate\Routing\Route), 'index')
+#5 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Ro in /home11/validate/public_html/test/app/controllers/ContactController.php on line 54
+[31-Jul-2015 07:56:10 UTC] PHP Fatal error:  Call to a member function send() on a non-object in /home11/validate/public_html/test/app/controllers/ContactController.php on line 54
+[31-Jul-2015 08:00:06 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home11/validate/public_html/test/app/controllers/ContactController.php on line 54
+[31-Jul-2015 09:30:17 UTC] PHP Fatal error:  Can't use function return value in write context in /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109 on line 20
+[31-Jul-2015 09:43:39 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: validator' in /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109:21
+Stack trace:
+#0 /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109(21): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home11/validat...', 21, Array)
+#1 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(37): include('/home11/validat...')
+#2 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(56): Illuminate\View\Engines\PhpEngine->evaluatePath('/home11/validat...', Array)
+#3 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(134): Illuminate\View\Engines\CompilerEngine->get('/home11/validat...', Array)
+#4 /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/View/View.php(102): Illuminate\View\View->getContents()
+#5 /home11/va in /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109 on line 21
+[31-Jul-2015 09:43:39 UTC] PHP Fatal error:  Call to a member function passes() on a non-object in /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109 on line 21
+[31-Jul-2015 09:51:09 UTC] PHP Parse error:  syntax error, unexpected '<' in /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109 on line 21
+[31-Jul-2015 09:53:53 UTC] PHP Parse error:  syntax error, unexpected '<' in /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109 on line 22
+[31-Jul-2015 10:56:04 UTC] PHP Parse error:  syntax error, unexpected '<' in /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109 on line 22
+[31-Jul-2015 10:58:03 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109 on line 22
+[31-Jul-2015 10:59:34 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109 on line 22
+[31-Jul-2015 11:18:05 UTC] PHP Parse error:  syntax error, unexpected end of file in /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109 on line 68
+[31-Jul-2015 11:27:36 UTC] PHP Parse error:  syntax error, unexpected '}' in /home11/validate/public_html/test/app/storage/views/b7513ff7a9c417dcbea0e2a50da49109 on line 36
+[31-Jul-2015 11:30:49 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\Request::post() in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 208
+[31-Jul-2015 11:30:58 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\Request::post() in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 208
+[31-Jul-2015 15:57:59 UTC] PHP Fatal error:  Call to undefined function base64_url_decode() in /home11/validate/public_html/test/app/controllers/UsersControllers/FacebookController.php on line 43
+[31-Jul-2015 15:58:21 UTC] PHP Fatal error:  Call to undefined function base64_url_decode() in /home11/validate/public_html/test/app/controllers/UsersControllers/FacebookController.php on line 43
+[31-Jul-2015 15:59:02 UTC] PHP Fatal error:  Call to undefined function base64_url_decode() in /home11/validate/public_html/test/app/controllers/UsersControllers/FacebookController.php on line 44
+[31-Jul-2015 16:00:00 UTC] PHP Fatal error:  Call to undefined function base64_url_decode() in /home11/validate/public_html/test/app/controllers/UsersControllers/FacebookController.php on line 43
+[01-Aug-2015 14:49:36 UTC] PHP Fatal error:  Class '\User' not found in /home11/validate/public_html/test/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php on line 120
+[07-Aug-2015 07:01:33 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home11/validate/public_html/test/app/storage/views/17c893430a2cccfe3a6799c43c098823 on line 106
+[07-Aug-2015 07:03:00 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home11/validate/public_html/test/app/storage/views/17c893430a2cccfe3a6799c43c098823 on line 106
+[07-Aug-2015 07:03:21 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home11/validate/public_html/test/app/storage/views/17c893430a2cccfe3a6799c43c098823 on line 106
+[07-Aug-2015 11:06:20 UTC] PHP Parse error:  syntax error, unexpected '.70192923' (T_DNUMBER) in /home11/validate/public_html/test/app/storage/views/17c893430a2cccfe3a6799c43c098823 on line 107
+[08-Aug-2015 14:32:12 UTC] PHP Parse error:  syntax error, unexpected end of file in /home11/validate/public_html/test/app/storage/views/a66c61101bf07d043e8e24a8cc4acb56 on line 359
+[17-Aug-2015 09:43:25 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::links() in /home11/validate/public_html/test/app/storage/views/22e3c6a8c17fab9ac674a41dd9c2121f on line 173
+[17-Aug-2015 12:06:42 UTC] PHP Parse error:  syntax error, unexpected ';' in /home11/validate/public_html/test/app/storage/views/a66c61101bf07d043e8e24a8cc4acb56 on line 148
+[17-Aug-2015 19:56:50 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home11/validate/public_html/test/app/storage/views/935cfb8f3fc6bf67dcb3b386ed97c13a on line 12
+[17-Aug-2015 19:57:13 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home11/validate/public_html/test/app/storage/views/935cfb8f3fc6bf67dcb3b386ed97c13a on line 117
+[18-Aug-2015 00:49:27 UTC] PHP Parse error:  syntax error, unexpected '}' in /home11/validate/public_html/test/app/storage/views/935cfb8f3fc6bf67dcb3b386ed97c13a on line 246
+[24-Aug-2015 20:54:35 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 32
+[24-Aug-2015 21:35:19 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 72
+[25-Aug-2015 06:25:23 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 72
+[25-Aug-2015 06:25:31 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 72
+[25-Aug-2015 06:26:43 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 72
+[25-Aug-2015 06:35:37 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 72
+[25-Aug-2015 12:00:11 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 72
+[25-Aug-2015 19:16:50 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 72
+[26-Aug-2015 06:45:45 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 72
+[26-Aug-2015 06:45:47 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 72
+[26-Aug-2015 13:19:54 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 72
+[26-Aug-2015 17:02:22 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::orderBy() in /home11/validate/public_html/test/app/controllers/IndustryController.php on line 13
+[01-Sep-2015 13:15:51 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 513
+[01-Sep-2015 13:15:55 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 513
+[01-Sep-2015 13:15:57 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 513
+[01-Sep-2015 14:00:55 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 513
+[01-Sep-2015 14:00:59 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 513
+[01-Sep-2015 14:01:22 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 513
+[01-Sep-2015 14:01:25 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 513
+[01-Sep-2015 14:01:32 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 513
+[01-Sep-2015 15:01:04 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/controllers/GiftVoucherController.php on line 513
+[02-Sep-2015 09:58:55 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/views/GiftVoucher/_inc_item.php on line 20
+[02-Sep-2015 09:59:01 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/views/GiftVoucher/_inc_item.php on line 20
+[02-Sep-2015 09:59:06 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/views/GiftVoucher/_inc_item.php on line 20
+[02-Sep-2015 11:58:38 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/views/GiftVoucher/_inc_item.php on line 20
+[02-Sep-2015 11:58:59 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/views/GiftVoucher/_inc_item.php on line 20
+[02-Sep-2015 13:24:37 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/views/GiftVoucher/_inc_item.php on line 20
+[03-Sep-2015 20:59:28 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/views/GiftVoucher/_inc_item.php on line 20
+[03-Sep-2015 20:59:33 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home11/validate/public_html/test/app/views/GiftVoucher/_inc_item.php on line 20
+[04-Sep-2015 07:21:07 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home11/validate/public_html/test/app/controllers/UsersControllers/MerchantController.php on line 517
+[04-Sep-2015 20:10:25 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home11/validate/public_html/test/app/storage/views/0e0e570ecb1bfcb8cc2bcf21ea9cf62b on line 74
+[07-Sep-2015 13:40:44 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home/validau7/public_html/test/app/storage/views/d1d44c42027ffec8f739ce9cb3c469e4 on line 74
+[09-Sep-2015 21:36:13 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home/validau7/public_html/test/app/storage/views/d1d44c42027ffec8f739ce9cb3c469e4 on line 74
+[11-Sep-2015 02:14:06 UTC] PHP Fatal error:  Call to a member function isMerchant() on a non-object in /home/validau7/public_html/test/app/storage/views/d1d44c42027ffec8f739ce9cb3c469e4 on line 74

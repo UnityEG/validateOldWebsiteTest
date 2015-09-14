@@ -1,0 +1,51 @@
+<?php $__env->startSection('main'); ?>
+<div class="forms-back">
+<p><a class="btn btn-success" href="<?php echo route('Industrys.create'); ?>"><span class="glyphicon glyphicon-plus"></span> Add New Industry</a></p>
+
+<h2>All Industries</h2>
+
+<?php if(!$Industrys->count()): ?>
+    There are no Industries
+<?php else: ?>
+	<table class="table table-hover list-table">
+    <thead>
+    	<tr>
+        	<th>Industry</th>
+	        <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php foreach($Industrys as $Industry): ?>
+        <tr>
+        	<td><?php echo link_to_route('Industrys.show', $Industry->industry, array($Industry->id)); ?></td>
+
+		<td>
+		<a href="<?php echo route('Industrys.edit', $Industry->id); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
+			<?php echo Form::open(array('method' => 'DELETE', 'route' => array('Industrys.destroy', $Industry->id))); ?>
+
+            <?php echo Form::button('<span class="glyphicon glyphicon-trash"></span>',array ('type'=>'submit','class'=>'btn btn-danger', 'onclick'=>'return ConfirmDelete()')); ?>
+
+            <?php echo Form::close(); ?>
+
+        </td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+    </table>
+   
+
+    <script>
+	function ConfirmDelete() {
+	    var r = confirm("This item will be permanently deleted and cannot be recovered. Are you sure?");
+	    if (r == true) {
+	        //txt = "You pressed OK!";
+	    } else {
+	        //txt = "You pressed Cancel!";
+	        return false;
+	    }
+	}
+	</script>
+<?php endif; ?>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

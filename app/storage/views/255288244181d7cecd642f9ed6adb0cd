@@ -1,0 +1,149 @@
+<?php $__env->startSection('main'); ?>
+<style>
+	input[type=text]:not(.filter),input[type=email],
+	input[type=password],input[type=date],
+	input[type=search],input[type=tel],input[type=phone]
+	{
+		width:100%;
+	}
+	.ui-autocomplete-input{
+		width:90%;
+		height: 40px;
+	}
+	.ui-button-icon-only{
+		width:9%;
+	}
+	.custom-combobox a{
+		height:40px !important;
+	}
+	.custom-form-group{
+		margin-bottom:4px !important;
+	}
+	.form-group{
+	margin-bottom: -5px;
+	}
+</style>
+<link rel="stylesheet" href="<?php echo e(asset('css/chosen.min.css')); ?>">
+<div class="forms-back">
+<?php echo Form::model($item, array('route'=>array('franchisor.update', $item->id), 'method'=>'put', 'role'=>'form')); ?>
+
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-left">
+<div class="form-group">
+    <?php echo Form::label('email', 'E-mail: '); ?>
+
+    <?php echo Form::email('email', $item_info_user->email, array('class'=>'form-control')); ?>
+
+    <?php echo $errors->first('email', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('password', 'Password: '); ?>
+
+    <?php echo Form::password('password', array('class'=>'form-control')); ?>
+
+    <?php echo $errors->first('password', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('password_confirmation', 'Password Confirmation: '); ?>
+
+    <?php echo Form::password('password_confirmation', array('class'=>'form-control')); ?>
+
+    <?php echo $errors->first('password_confirmation', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
+<div class="form-group">
+    <?php echo Form::label('franchisor_name', 'Franchisor Name: '); ?>
+
+    <?php echo Form::text('franchisor_name', null, array('class'=>'form-control')); ?>
+
+    <?php echo $errors->first('franchisor_name', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('contact', 'Contact Name: '); ?>
+
+    <?php echo Form::text('contact', null, array('class'=>'form-control')); ?>
+
+    <?php echo $errors->first('contact', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('phone', 'Phone: '); ?>
+
+    <?php echo Form::input('tel', 'phone', null, array('class'=>'form-control')); ?>
+
+    <?php echo $errors->first('phone', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+</div>
+</div>
+
+<?php if(Auth::user()->hasRule('assign_rules')): ?>
+
+<div class="form-group">
+    <?php echo Form::select('assign_rules_ids[]', Rule::lists('rule_name', 'id'), $item_rule_ids, array('id'=>'assign_rules', 'class'=>'form-control', 'multiple'=>true, 'data-json'=>false, 'data-title'=>'Permissions')); ?>
+
+    <?php echo $errors->first('assign_rules_ids', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('reset_rules', 'Reset Rules:'); ?>
+
+    <?php echo Form::checkbox('reset_rules', true, false); ?>
+
+    <?php echo $errors->first('reset_rules', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+<?php endif; ?>
+
+<?php if(Auth::user()->hasRule('user_activate')): ?>
+<div class="form-group">
+    <?php echo Form::label('active', 'Active User: '); ?>
+
+    <?php $checked = (isset($item_info_user->active) && $item_info_user->active == TRUE)? TRUE:FALSE; ?>
+    <?php echo Form::checkbox('active', true, $checked); ?>
+
+    <?php echo $errors->first('active', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+<?php endif; ?>
+
+<?php if(Auth::user()->hasRule('franchisor_activate')): ?>
+<div class="form-group">
+    <?php echo Form::label('active_franchisor', 'Active Franchisor: '); ?>
+
+    <?php $checked = (isset($item->active_franchisor)&&$item->active_franchisor == TRUE)?TRUE:FALSE; ?>
+    <?php echo Form::checkbox('active_franchisor', true, $checked); ?>
+
+    <?php echo $errors->first('active_franchisor', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+<?php endif; ?>
+
+<div class="form-group">
+    <?php echo Form::submit('Save', array('class'=>'btn btn-primary')); ?>
+
+    <?php echo link_to_route('franchisor.show', 'Cancel', array($item->id), array('class'=>'btn btn-danger')); ?>
+
+</div>
+
+<?php echo Form::close(); ?>
+
+</div>
+<script src="<?php echo e(asset('js/dual-list-box.min.js')); ?>"></script>
+
+<script>
+$("#assign_rules").DualListBox();
+</script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,24 @@
+<?php extract($data); ?>
+
+
+<?php $__env->startSection('main'); ?>
+
+<!--sales and validations reports-->
+<div class="row">
+    <!--sales report-->
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <?php echo $__env->make('users.reports.owner.sales', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    </div>
+    <!--validations report-->
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></div>
+</div>
+
+<div class="row"></div>
+
+
+
+
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

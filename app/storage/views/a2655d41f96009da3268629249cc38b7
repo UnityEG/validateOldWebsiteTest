@@ -1,0 +1,31 @@
+<?php $__env->startSection('main'); ?>
+    <?php echo Form::open(array('action'=>'RemindersController@postReset', 'method'=>'post', 'role'=>'form')); ?>
+
+    <input type="hidden" name="token" value="<?php echo $token; ?>">
+    
+    <div class="form-group">
+    <?php echo Form::label('email', 'Email: '); ?>
+
+    <?php echo Form::email('email', null, array('class'=>'form-control')); ?>
+
+    </div>
+    
+    <div class="form-group">
+        <?php echo Form::label('password', 'Password'); ?>
+
+        <?php echo Form::password('password', array('class'=>'form-control')); ?><small> at least 6 characters!.</small>
+    </div>
+    
+    <div class="form-group">
+        <?php echo Form::label('password_confirmation', 'Password confirmation: '); ?>
+
+        <?php echo Form::password('password_confirmation', array('class'=>'form-control')); ?>
+
+    </div>
+    <div class="form-group">
+        <?php echo Form::submit('Reset Password'); ?>
+
+    </div>
+</form>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

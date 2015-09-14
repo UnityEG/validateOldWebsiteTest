@@ -1,0 +1,149 @@
+<?php $__env->startSection('main'); ?>
+<style>
+    #searchResult{
+        display: none;
+        background-color: #CFFCC7;
+        border: 1px solid #aaaaaa;
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        z-index: 1000;
+    }
+    #searchResult div{
+        margin-top: 10px;
+        font-family: Verdana,Arial,sans-serif;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 3px 1em 3px .4em;
+        cursor: pointer;
+        min-height: 0;
+        line-height: 1.7;
+    }
+</style>
+<div class="forms-back">
+    <p><a class="btn btn-success" href="<?php echo route('merchant.create'); ?>"><span class="glyphicon glyphicon-user"></span> Create Merchant</a></p>
+    <h2>Merchants</h2>
+
+    <div class="form-group">
+        <?php echo Form::input('search', 'searchKeys', null, array('class'=>'form-control input-lg', 'placeholder'=>'Search For Merchant')); ?>
+
+        <div id="searchResult"></div>
+    </div>
+
+    <table class="table table-hover list-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Photo</th>
+                <th>Logo</th>
+                <th>Type</th>
+                <th>Franchisor</th>
+                <th>Suppliers</th>
+                <th>Merchant Managers</th>
+                <th>Actions</th>
+            </tr>
+        </thead>  
+        <tbody> 
+            <?php
+            foreach ( $group as $item ):
+                $item_info_from_user_table = $item->user()->first();
+                $item_info_franchisor      = $item->franchisor()->first();
+                $active_logo               = $item_info_from_user_table->userPic()->where( 'type', '=', 'logo' )->where( 'active_pic', '=', 1 )->first( array( 'pic', 'extension' ) );
+                $active_photo              = $item_info_from_user_table->userPic()->where( 'type', '=', 'photo' )->where( 'active_pic', '=', '1' )->first( array( 'pic', 'extension' ) );
+
+//    building suppliers list
+                $item_info_supplier = $item->supplier;
+                $suppliers_list     = "<ul>";
+                foreach ( $item_info_supplier as $supplier ) {
+                    $suppliers_list .= "<li>";
+                    $suppliers_list .= link_to_route( 'supplier.show', $supplier->first_name, array( $supplier->id ) );
+                    $suppliers_list .= "</li>";
+                }
+                $suppliers_list .= "</ul>";
+
+//    building merchant manager list
+                $item_info_merchant_manager = $item->merchantManagers;
+                $merchant_manager_list      = '<ul>';
+                foreach ( $item_info_merchant_manager as $merchant_manager ) {
+                    $merchant_manager_list .= "<li>";
+                    $merchant_manager_list .= link_to_route( 'merchant_manager.show', $merchant_manager->first_name . ' ' . $merchant_manager->last_name, array( $merchant_manager->id ) );
+                    $merchant_manager_list .="</li>";
+                }
+                $merchant_manager_list .= "</ul>";
+                ?>
+                <tr>
+                    <td>
+                        <a href="<?php echo route('merchant.show', $item->id); ?>"><?php echo $item->first_name.' '.$item->last_name; ?></a>
+                    </td>
+
+                    <td>
+                        <?php if(is_object($active_photo)): ?>
+                        <img src="<?php echo e($merchant_photo_path.'/'.$active_photo->pic.'.'.$active_photo->extension); ?>" style="width:50px;height: 50px;">
+                        <?php endif; ?>
+                    </td>
+
+                    <td>
+                        <?php if(is_object($active_logo)): ?>
+                        <img src="<?php echo e($merchant_logo_path.'/'.$active_logo->pic.'.'.$active_logo->extension); ?>" style="width: 50px;height: 50px;">
+                        <?php endif; ?>
+                    </td>
+
+                    <td><?php echo e($item_info_from_user_table->user_type); ?></td>
+
+                    <td>
+                        <?php if(isset($item_info_franchisor) && !empty($item_info_franchisor)): ?>
+                        <?php echo link_to_route('franchisor.show', $item_info_franchisor->franchisor_name, array($item_info_franchisor->id)); ?>
+
+                        <?php endif; ?>
+                    </td>
+
+                    <td>
+                        <?php if(isset($suppliers_list) && !empty($suppliers_list)): ?>
+                        <?php echo $suppliers_list; ?>
+
+                        <?php endif; ?>
+                    </td>
+
+                    <td>
+                        <?php if(isset($merchant_manager_list) && !empty($merchant_manager_list)): ?>
+                        <?php echo $merchant_manager_list; ?>
+
+                        <?php endif; ?>
+                    </td>
+                    
+                    <td>
+                        <?php echo link_to_route('reports.merchant', 'Reports', array($item->id)); ?>
+
+                    </td>
+
+                    <td>
+                        <a href="<?php echo route('merchant.edit', $item->id); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
+
+                        <?php echo Form::open(['url'=>'merchant/'.$item->id, 'method'=>'delete']); ?>
+
+                        <?php echo Form::button('<span class="glyphicon glyphicon-trash"></span>',array ('type'=>'submit','class'=>'btn btn-danger ', 'onclick'=>'return confirm("Are you sure you want to delete '.$item->first_name.' ?")')); ?>
+
+                        <?php echo Form::close(); ?>
+
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <?php echo $group->links(); ?>
+
+</div>
+
+<script src="<?php echo asset('js/searchUsers.js'); ?>"></script>
+<script>
+
+    jQuery("document").ready(function () {
+        searchProcess.url = "<?php echo route('merchant.index'); ?>";
+        searchProcess.searchResult();
+
+    });//jQuery("document").ready(function()
+
+</script>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

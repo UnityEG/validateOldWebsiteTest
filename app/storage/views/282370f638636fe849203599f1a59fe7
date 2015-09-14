@@ -1,0 +1,26 @@
+<?php $__env->startSection('main'); ?>
+<?php if(!is_null($user)): ?>
+<h1><?php echo $user->name; ?></h1>
+
+<div>Username</div>
+<div><?php echo $user->username; ?></div>
+<div>Email</div>
+<div><?php echo $user->email; ?></div>
+<div>Password</div>
+<div><?php echo $user->password; ?></div>
+<div>Phone</div>
+<div><?php echo $user->phone; ?></div>
+<div>Name</div>
+<div><?php echo $user->name; ?></div>
+<div><?php echo link_to_route('users.edit', 'Edit', array($user->id), array('class' => 'btn btn-info')); ?></div>
+<div><?php echo Form::open(array('method' => 'DELETE', 'route' => array('users.destroy', $user->id))); ?>
+
+		<?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>
+
+	 <?php echo Form::close(); ?></div>
+<?php else: ?>
+    There are no user.
+<?php endif; ?>
+<p><?php echo link_to_route('users.index', 'List all users'); ?></p>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.users', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

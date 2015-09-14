@@ -1,0 +1,28 @@
+<?php $__env->startSection('main'); ?>
+<?php if($errors->any()): ?>
+    <ul><?php echo implode('', $errors->all('<li class="error">:message</li>')); ?></ul>
+<?php endif; ?>
+<div class="forms-back">
+<div align="right"><?php echo link_to_route('UseTerms.index', 'List all terms of use'); ?></div>
+<h1>Edit Term of Use</h1>
+<?php echo Form::model($UseTerm, array('method' => 'PATCH', 'route' => array('UseTerms.update', $UseTerm->id))); ?>
+
+	<div class="form-group">
+		<?php echo Form::label('name', 'Term of use:'); ?>
+
+		<?php echo Form::text('name', null, array('class'=>'form-control')); ?>
+
+	</div>
+
+	<div class="form-group">
+		<?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
+
+		<?php echo link_to_route('UseTerms.show', 'Cancel', $UseTerm->id, array('class' => 'btn')); ?>
+
+	</div>
+
+<?php echo Form::close(); ?>
+
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,129 @@
+<?php $__env->startSection('main'); ?>
+<?php if($errors->any()): ?>
+    <ul><?php echo implode('', $errors->all('<li class="error">:message</li>')); ?></ul>
+<?php endif; ?>
+
+<div align="right"><?php echo link_to_route('GiftVouchersParameters.index', 'List all Gift Vouchers Parameter'); ?></div>
+<h1>Create Gift Voucher Parameters</h1>
+<?php echo Form::open(array('route' => 'GiftVouchersParameters.store', 'role' => 'form')); ?>
+
+	<div class="form-group">
+		<?php echo Form::label('MerchantID', 'Merchant:'); ?>
+
+		<?php echo Form::select('MerchantID', merchant::lists('BusinessName','id'), null, array('class'=>'form-control')); ?>
+
+	</div>
+	<div class="form-group">
+		<?php echo Form::label('Title', 'Title:'); ?>
+
+		<?php echo Form::text('Title', null, array('class'=>'form-control')); ?>
+
+	</div>
+	<div class="radio">
+		<label class="radio-inline"><?php echo Form::radio('SingleUse', 1, true); ?>Single Use</label>
+		<label class="radio-inline"><?php echo Form::radio('SingleUse', 0); ?>Multi Use</label>
+	</div>
+	<div id="div_NoOfUses" class="form-group">
+		<?php echo Form::label('NoOfUses', 'Number of uses:'); ?>
+
+		<?php echo Form::text('NoOfUses', '1', array('id'=>'NoOfUses', 'class'=>'form-control')); ?>
+
+	</div>
+	<div class="checkbox">
+		<label><?php echo Form::checkbox('Expires', 1, true, array('id'=>'Expires')); ?>Expires</label>
+	</div>
+	<div id="div_ValidFor" class="form-group">
+		<?php echo Form::label('ValidFor', 'Valid For:'); ?>
+
+		<?php echo Form::text('ValidFor',null, array('class'=>'form-control')); ?> day(s).
+	</div>
+	<div class="checkbox">
+		<label><?php echo Form::checkbox('LimitedQuantity', 1, true, array('id'=>'LimitedQuantity')); ?>Limited Quantity</label>
+	</div>
+	<div id="div_Quantity"  class="form-group">
+		<?php echo Form::label('Quantity', 'Quantity:'); ?>
+
+		<?php echo Form::text('Quantity',null, array('class'=>'form-control')); ?>
+
+	</div>
+	<div class="form-group">
+		<?php echo Form::label('MinVal', 'Min Value:'); ?>
+
+		<?php echo Form::text('MinVal',null, array('class'=>'form-control')); ?>
+
+	</div>
+	<div class="form-group">
+		<?php echo Form::label('MaxVal', 'Max Value:'); ?>
+
+		<?php echo Form::text('MaxVal',null, array('class'=>'form-control')); ?>
+
+	</div>
+	<div class="form-group">
+		<?php echo Form::label('TermsOfUse', 'Terms of Use:'); ?>
+
+		<?php echo Form::text('TermsOfUse',null, array('class'=>'form-control')); ?>
+
+	</div>
+
+	<?php echo Form::submit('Create', array('class' => 'btn btn-primary')); ?>
+
+
+<?php echo Form::close(); ?>
+
+
+<script>
+// =============================================================================
+$( document ).ready(function() {
+	first_run = true;
+	ShowHide_div_NoOfUses();
+	ShowHide_div_ValidFor();
+	ShowHide_div_Quantity();
+	first_run = false;
+});
+// =============================================================================
+function ShowHide_div_NoOfUses() {
+  if ($('input[Name="SingleUse"]:checked').val() === '1') {
+	$('#NoOfUses').val('1');
+	$('#div_NoOfUses').hide();
+  } else {
+	$('#div_NoOfUses').show();
+	if(!first_run){$('#NoOfUses').focus();};
+  }
+}
+// -----------------------------------------------------------------------------
+$('input[Name="SingleUse"]').click(function(){
+	ShowHide_div_NoOfUses();
+});
+// =============================================================================
+function ShowHide_div_ValidFor() {
+  if ($('#Expires').is(':checked')) {
+	$('#div_ValidFor').show();
+	if(!first_run){$('#ValidFor').focus();};
+  } else {
+	$('#ValidFor').val('0');
+	$('#div_ValidFor').hide();
+  }
+}
+// -----------------------------------------------------------------------------
+$('#Expires').click(function(){
+	ShowHide_div_ValidFor();
+});
+// =============================================================================
+
+function ShowHide_div_Quantity() {
+  if ($('#LimitedQuantity').is(':checked')) {
+	$('#div_Quantity').show();
+	if(!first_run){$('#Quantity').focus();};
+  } else {
+	$('#div_Quantity').hide();
+	$('#Quantity').val('0');
+  }
+}
+$('#LimitedQuantity').click(function(){
+	ShowHide_div_Quantity();
+});
+// =============================================================================
+
+</script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

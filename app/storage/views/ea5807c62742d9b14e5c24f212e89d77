@@ -1,0 +1,34 @@
+<?php $__env->startSection('main'); ?>
+<h2>Log in</h2>
+
+<?php echo Form::open(['url'=>'login', 'role' => 'form']); ?>
+
+<div class="form-group">
+    <?php echo Form::label('email', 'Email: '); ?>
+
+    <?php echo Form::email('email', null, array('class'=>'form-control')); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('password', 'Password'); ?>
+
+    <?php echo Form::password('password', array('class'=>'form-control')); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('remember_me', 'Remember Me:'); ?>
+
+    <?php echo Form::input('checkbox', 'remember_me'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::submit('login'); ?>
+
+</div>
+<a href="<?php echo action("RemindersController@getRemind"); ?>">Forgot your password?</a>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

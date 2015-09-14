@@ -1,0 +1,70 @@
+<?php $__env->startSection('main'); ?>
+
+<?php if(Auth::user()->user_type == 'developer'): ?>
+<p><?php echo link_to_route('rules.create', 'Create new Rule'); ?></p>
+<?php endif; ?>
+
+<h1>Rules of all users</h1>
+
+<table class="table table-bordered table-hover table-striped">
+    <tr>
+        <th>Rule Name</th>
+        <th>Users</th>
+        <?php if(g::isDeveloper()): ?>
+        <th>&nbsp;</th>
+        <?php endif; ?>
+    </tr>
+
+    <?php
+    foreach ( $group as $item ):
+        
+            $item_info_user = $item->users()->where('user_type', '!=', 'developer')->get();
+
+        $users_list = "<ul>";
+        foreach ( $item_info_user as $user ) {
+//            check for active_rule
+            $active_rule = $user->pivot->active_rule;
+            
+            if ( 0 != $active_rule && null != $active_rule ) {
+
+                $users_list .="<li>";
+                $type      = $user->user_type;
+                $info_type = $user->$type()->first();
+
+                if ( isset( $info_type ) && !empty( $info_type ) ) {
+                    $users_list .= $user->email . ' (' . link_to_route( $type . '.show', $info_type->first_name . ' ' . $info_type->last_name, array( $info_type->id ) ) . ' )';
+                }
+
+                $users_list .="</li>";
+            }
+        }
+        $users_list .= "</ul>";
+        ?>
+        <tr>
+            <td><?php echo link_to_route('rules.show', $item->rule_name, array($item->id)); ?></td>
+
+            <td><?php echo $users_list; ?></td>
+			<?php if(g::isDeveloper()): ?>
+            <td><?php echo link_to_route('rules.edit', 'Edit', array($item->id), array('class'=>'btn btn-primary')); ?></td>
+            <?php endif; ?>
+            <?php /*
+            <?php if($delete_rule == true): ?>
+            <td>
+                <?php echo Form::open(array('route'=>array('rules.destroy', $item->id), 'method'=>'delete', 'role'=>'form')); ?>
+
+                <?php echo Form::submit('Delete', array('class'=>'btn btn-danger', 'onclick'=>"return confirm('are you sure you want to delete $item->rule_name ?')")); ?>
+
+                <?php echo Form::close(); ?>
+
+            </td>
+            <?php endif; ?>
+            */ ?>
+        </tr>
+
+    <?php endforeach; ?>
+</table>
+
+<?php echo $group->links(); ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,79 @@
+<?php $__env->startSection('main'); ?>
+<?php if(is_null($GiftVouchersParameter)): ?>
+    There are no gift voucher parameters.
+<?php else: ?>
+<div align="right"><?php echo link_to_route('GiftVouchersParameters.index', 'List all Gift Vouchers Parameter'); ?></div>
+<h1>Gift Vouchers Parameters</h1>
+
+<?php $SingleUse 		= ($GiftVouchersParameter->SingleUse 		== 1) ? 'Yes' : 'No'; ?>
+<?php $Expires   		= ($GiftVouchersParameter->Expires   		== 1) ? 'Yes' : 'No'; ?>
+<?php $LimitedQuantity= ($GiftVouchersParameter->LimitedQuantity== 1) ? 'Yes' : 'No'; ?>
+<table class="table table-striped table-bordered">
+    	<tr>
+        	<th>Voucher Title</th>
+        	<td><?php echo $GiftVouchersParameter->Title; ?></td>
+        </tr>
+    	<tr>
+        	<th>Merchant</th>
+        	<td><?php echo $GiftVouchersParameter->MerchantID; ?></td>
+        </tr>
+    	<tr>
+	        <th>Single Use</th>
+          	<td><?php echo $SingleUse; ?></td>
+        </tr>
+    	<tr>
+	        <th>Number of Uses</th>
+          	<td><?php echo $GiftVouchersParameter->NoOfUses; ?></td>
+        </tr>
+    	<tr>
+	        <th>Expires</th>
+          	<td><?php echo $Expires; ?></td>
+        </tr>
+    	<tr>
+	        <th>Valid For</th>
+          	<td><?php echo $GiftVouchersParameter->ValidFor; ?></td>
+        </tr>
+    	<tr>
+	        <th>Limited Quantity</th>
+          	<td><?php echo $LimitedQuantity; ?></td>
+        </tr>
+    	<tr>
+	        <th>Quantity</th>
+          	<td><?php echo $GiftVouchersParameter->Quantity; ?></td>
+        </tr>
+    	<tr>
+	        <th>Min Val</th>
+          	<td><?php echo $GiftVouchersParameter->MinVal; ?></td>
+        </tr>
+    	<tr>
+	        <th>Max Val</th>
+          	<td><?php echo $GiftVouchersParameter->MaxVal; ?></td>
+        </tr>
+    	<tr>
+	        <th>Terms of Use</th>
+          	<td><?php echo $GiftVouchersParameter->TermsOfUse; ?></td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+<div class="form-group">
+<?php echo Form::open(array('method' => 'DELETE', 'route' => array('GiftVouchersParameters.destroy', $GiftVouchersParameter->id))); ?>
+
+	<?php echo link_to_route('GiftVouchersParameters.edit', 'Edit', array($GiftVouchersParameter->id), array('class' => 'btn btn-info')); ?>
+
+	<?php echo Form::submit('Delete', array('class' => 'btn btn-danger')); ?>
+
+<?php echo Form::close(); ?>
+
+</div>
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

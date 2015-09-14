@@ -1,0 +1,2 @@
+<li><a href="">Welcome <?php echo e(Session::get('facebook_user')->facebook_username); ?></a></li>
+<li><?php echo link_to('logout', 'Logout'); ?></li>

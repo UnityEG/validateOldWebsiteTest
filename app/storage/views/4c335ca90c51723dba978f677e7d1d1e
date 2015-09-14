@@ -1,0 +1,32 @@
+<?php
+$user = Auth::user();
+
+$type = $user->user_type;
+
+$user_info = $user->$type()->first();
+?>
+
+
+
+<?php $__env->startSection('admin_menu'); ?>
+
+<?php if(is_object($user)): ?>
+
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo route('vouchers-admin.'.$type.'.users.edit', $user_info->id); ?>">Users <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li><?php echo link_to('vouchers-admin', 'Home'); ?></li>
+        <li><?php echo link_to('vouchers-admin/'.$type.'/users', 'Users'); ?></li>
+        <li role="separator" class="divider"></li>
+    </ul>
+</li>
+
+<?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('main'); ?>
+<p>Welcome &nbsp;&nbsp;<a href="<?php echo route('vouchers-admin.'.$type.'.users.edit', $user_info->id); ?>"><?php echo ucfirst($user_info->name); ?></a> <span style="float: right;"><a href="<?php echo url('/logout'); ?>">logout</a></span></p>
+<?php echo $__env->yieldContent('content'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

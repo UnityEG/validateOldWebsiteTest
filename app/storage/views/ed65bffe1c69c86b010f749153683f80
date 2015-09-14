@@ -1,0 +1,26 @@
+<?php $__env->startSection('main'); ?>
+
+<div class="forms-back">
+<?php echo Form::open(array('route'=>'rules.store', 'method'=>'post', 'role'=>'form')); ?>
+
+
+<div class="form-group">
+<?php echo Form::label('rule_name', 'Rule Name: '); ?>
+
+<?php echo Form::text('rule_name', null, array('class'=>'form-control')); ?>
+
+<?php echo $errors->first('rule_name'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::submit('Create Rule', array('class'=>'btn btn-primary')); ?>
+
+    <?php echo link_to_route('rules.index', 'Cancel', null, array('class'=>'btn btn-danger')); ?>
+
+</div>
+<?php echo Form::close(); ?>
+
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,28 @@
+<?php $__env->startSection('main'); ?>
+<?php if($errors->any()): ?>
+    <ul><?php echo implode('', $errors->all('<li class="error">:message</li>')); ?></ul>
+<?php endif; ?>
+<div class="forms-back">
+<div align="right"><?php echo link_to_route('Industrys.index', 'List all Industries'); ?></div>
+<h1>Edit Industry</h1>
+<?php echo Form::model($Industry, array('method' => 'PATCH', 'route' => array('Industrys.update', $Industry->id))); ?>
+
+	<div class="form-group">
+		<?php echo Form::label('industry', 'Industry:'); ?>
+
+		<?php echo Form::text('industry', null, array('class'=>'form-control')); ?>
+
+	</div>
+
+	<div class="form-group">
+		<?php echo Form::submit('Update', array('class' => 'btn btn-info')); ?>
+
+		<?php echo link_to_route('Industrys.show', 'Cancel', $Industry->id, array('class' => 'btn')); ?>
+
+	</div>
+
+<?php echo Form::close(); ?>
+
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

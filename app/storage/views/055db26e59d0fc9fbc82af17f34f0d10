@@ -1,0 +1,104 @@
+<?php extract( $data ); ?>
+
+
+<?php $__env->startSection('main'); ?>
+
+<style>
+    #searchResult{
+        display: none;
+        background-color: #CFFCC7;
+        border: 1px solid #aaaaaa;
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        z-index: 1000;
+    }
+    #searchResult div{
+        margin-top: 10px;
+        font-family: Verdana,Arial,sans-serif;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 3px 1em 3px .4em;
+        cursor: pointer;
+        min-height: 0;
+        line-height: 1.7;
+    }
+</style>
+
+<div class="forms-back">
+    <?php if(Auth::user()->user_type == 'developer'): ?>
+    <p><a class="btn btn-success" href="<?php echo route('rules.create'); ?>"><span class="glyphicon glyphicon-user"></span> Create New Rule</a></p>
+    <?php endif; ?>
+
+    <h2>Rules of all users</h2>
+
+    <div class="form-group">
+        <input type="search" name="searchKeys" class="form-control input-lg" placeholder="Search for User">
+        <div id="searchResult"></div>
+    </div>
+
+    <table class="table table-hover list-table">
+        <thead>
+            <tr>
+                <th>Rule Name</th>
+                <?php if(g::isDeveloper() || $delete_rule==true): ?>
+                <th>Actions</th>
+                <?php endif; ?>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($group as $item): ?>
+
+            <tr>
+                <td>
+                    <?php echo link_to_route('rules.show', $item->rule_name, array($item->id)); ?>
+
+                </td>
+
+
+                <?php if(g::isDeveloper() && $delete_rule==false): ?>
+                <td> 
+                    <a href="<?php echo route('rules.edit', $item->id); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
+                </td>
+                <?php elseif(!g::isDeveloper() && $delete_rule==true): ?>
+                <td>
+                    <?php echo Form::open(array('route'=>array('rules.destroy', $item->id), 'method'=>'delete', 'role'=>'form')); ?>
+
+                    <?php echo Form::button('<span class="glyphicon glyphicon-trash"></span>',array ('type'=>'submit','class'=>'btn btn-danger', 'onclick'=>"return confirm('are you sure you want to delete $item->rule_name ?')")); ?>
+
+                    <?php echo Form::close(); ?>
+
+                </td>
+                <?php elseif(g::isDeveloper() && $delete_rule==true): ?>
+                <td> 
+                    <a href="<?php echo route('rules.edit', $item->id); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
+                    <?php echo Form::open(array('route'=>array('rules.destroy', $item->id), 'method'=>'delete', 'role'=>'form')); ?>
+
+                    <?php echo Form::button('<span class="glyphicon glyphicon-trash"></span>',array ('type'=>'submit','class'=>'btn btn-danger', 'onclick'=>"return confirm('are you sure you want to delete $item->rule_name ?')")); ?>
+
+                    <?php echo Form::close(); ?>
+
+                </td>
+                <?php endif; ?>
+
+            </tr>
+
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+
+    <?php echo $group->links(); ?>
+
+</div>
+<script src="<?php echo asset('js/searchUsers.js'); ?>"></script>
+<script>
+"use strict";
+jQuery("document").ready(function ($) {
+    searchProcess.url = "<?php echo route('user.index'); ?>";
+    searchProcess.searchResult();
+});//jQuery("document").ready(function($)
+
+</script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

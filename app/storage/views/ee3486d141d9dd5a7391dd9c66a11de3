@@ -1,0 +1,53 @@
+<?php $__env->startSection('main'); ?>
+<div class="forms-back">
+<table class="table table-hover list-table">
+<thead>
+    <tr>
+        <th>Franchisor Name</th>
+        <th>Contact Name</th>
+        <th>Phone</th>
+        <th>Type</th>
+        <th>Merchants</th>
+        <th>Actions</th>
+    </tr>
+</thead>
+<tbody>    
+    <tr>
+        <td><?php echo e($item->franchisor_name); ?></td>
+        
+        <td>
+            <?php echo e($item->contact); ?>
+
+        </td>
+        
+        <td><?php echo e($item->phone); ?></td>
+        
+        <td>
+            <?php echo link_to_route('franchisor.index', $item_info_user->user_type); ?>
+
+        </td>
+        
+        <td>
+            <ul>
+                <?php foreach($item_info_merchant as $merchant): ?>
+                <li><?php echo link_to_route('merchant.show', ucfirst($merchant->first_name).' '.$merchant->last_name, array($merchant->id)); ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </td>
+
+		<td>
+		<a href="<?php echo route('franchisor.edit', $item->id); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
+		
+            <?php echo Form::open(array('route'=>array('franchisor.destroy', $item->id), 'method'=>'delete', 'role'=>'form')); ?>
+
+            <?php echo Form::button('<span class="glyphicon glyphicon-trash"></span>',array ('type'=>'submit','class'=>'btn btn-danger', 'onclick'=>"return confirm('are you sure you want to delete $item->first_name?')")); ?>
+
+            <?php echo Form::close(); ?>
+
+        </td>
+    </tr>
+	</tbody>
+</table>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

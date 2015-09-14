@@ -1,0 +1,46 @@
+<?php $__env->startSection('main'); ?>
+<div align="right"><?php echo link_to_route('UseTerms.create', 'Add new term of use'); ?></div>
+<h1>All terms of use</h1>
+
+<?php if(!$UseTerms->count()): ?>
+    There are no term of use
+<?php else: ?>
+	<table class="table table-striped table-bordered">
+    <thead>
+    	<tr>
+        	<th>Term of use</th>
+	        <th colspan="2"></th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php foreach($UseTerms as $UseTerm): ?>
+        <tr>
+        	<td><?php echo link_to_route('UseTerms.show', $UseTerm->name, array($UseTerm->id)); ?></td>
+
+            <td><?php echo link_to_route('UseTerms.edit', 'Edit', array($UseTerm->id), array('class' => 'btn btn-info')); ?></td>
+            <td><?php echo Form::open(array('method' => 'DELETE', 'route' => array('UseTerms.destroy', $UseTerm->id))); ?>
+
+                	<?php echo Form::submit('Delete', array('class' => 'btn btn-danger', 'onclick'=>'return ConfirmDelete()')); ?>
+
+                <?php echo Form::close(); ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+    </table>
+    <?php echo $UseTerms->links(); ?>
+
+
+    <script>
+	function ConfirmDelete() {
+	    var r = confirm("This item will be permanently deleted and cannot be recovered. Are you sure?");
+	    if (r == true) {
+	        //txt = "You pressed OK!";
+	    } else {
+	        //txt = "You pressed Cancel!";
+	        return false;
+	    }
+	}
+	</script>
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

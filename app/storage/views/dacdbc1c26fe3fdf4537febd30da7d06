@@ -1,0 +1,84 @@
+<?php $__env->startSection('main'); ?>
+
+<style>
+    #searchResult{
+        display: none;
+        background-color: #CFFCC7;
+        border: 1px solid #aaaaaa;
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        z-index: 1000;
+    }
+    #searchResult div{
+        margin-top: 10px;
+        font-family: Verdana,Arial,sans-serif;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 3px 1em 3px .4em;
+        cursor: pointer;
+        min-height: 0;
+        line-height: 1.7;
+    }
+
+</style>
+<div class="forms-back">
+<p><a class="btn btn-success" href="<?php echo route('customer.create'); ?>"><span class="glyphicon glyphicon-user"></span> Create Customer</a></p>
+<h2>Customers</h2>
+
+<div class="form-group">
+    <input type="search" name="searchKeys" class="form-control input-lg" placeholder="Search for Customer">
+    <div id="searchResult"></div>
+</div>
+
+<table class="table table-hover list-table">
+	<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+		<th>Actions</th>
+    </tr>
+	</thead>
+	<tbody>
+    <?php foreach($group as $item): ?>
+    <?php
+    $item_info_from_user_table = $item->user()->first();
+    $user_type                 = '';
+    if ( $item_info_from_user_table != null ) {
+        $user_type = $item_info_from_user_table->user_type;
+    }
+    ?>
+    <tr>
+        <td><a href="<?php echo route('customer.show', $item->id); ?>"><?php echo e(ucfirst($item->first_name.' '.$item->last_name)); ?></a></td>
+        <td><?php echo e($user_type); ?></td>
+        <td>
+		<a href="<?php echo route('customer.edit', $item->id); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
+		
+            <?php echo Form::open(['url'=>'customer/'.$item->id, 'method'=>'delete']); ?>
+
+            <?php echo Form::button('<span class="glyphicon glyphicon-trash"></span>',array ('type'=>'submit','class'=>'btn btn-danger', 'onclick'=>'return confirm("Are you sure you want to delete '.$item->name.' ?")')); ?>
+
+            <?php echo Form::close(); ?>
+
+        </td>
+    </tr>
+    <?php endforeach; ?>
+	</tbody>
+</table>
+<?php echo $group->links(); ?>
+
+</div>
+<script src="<?php echo asset('js/searchUsers.js'); ?>"></script>
+<script>
+
+    jQuery("document").ready(function () {
+        searchProcess.url = "<?php echo route('customer.index'); ?>";
+        
+        searchProcess.searchResult();
+    });//jQuery("document").ready(function()
+
+</script>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

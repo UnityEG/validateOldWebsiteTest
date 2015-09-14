@@ -1,0 +1,56 @@
+<?php $route = 'GiftVoucher';?>
+
+
+<?php $__env->startSection('main'); ?>
+<div class="forms-back">
+<!--div align="right"><?php echo link_to_route($route.'.create', 'Add new gift voucher', array('customer_id'=>'3', 'gift_vouchers_parameters_id'=>'2')); ?></div-->
+<h2>Purchased Gift Vouchers</h2>
+
+<?php if(!$group->count()): ?>
+    There are no gift voucher.
+<?php else: ?>
+	<table class="table table-hover list-table">
+    <thead>
+    	<tr>
+        	<th>Voucher Code</th>
+	        <th>Status</th>
+	        <th>Merchant</th>
+	        <th>Expiry Date</th>
+	        <th>Voucher Value</th>
+	        <th>Voucher Balance</th>
+	        <!--th colspan="2"></th-->
+        </tr>
+    </thead>
+    <tbody>
+    <?php foreach($group as $item): ?>
+		<?php include(app_path().'/views/GiftVoucher/_inc_item.php');?>
+        <tr>
+        	<td><?php echo $item->qr_code_str; ?></td>
+          	<td><?php echo $item->status_str; ?></td>
+        	<td><?php echo $item->MerchantBusinessName; ?></td>
+          	<td><?php echo $item->expiry_date; ?></td>
+          	<td><?php echo "$" . number_format($item->voucher_value, 2, '.', ','); ?></td>
+          	<td><?php echo "$" . number_format($item->voucher_balance, 2, '.', ','); ?></td>
+            <!--td><?php echo $edit_btn; ?></td>
+            <td><?php echo $delete_btn; ?></td-->
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+    </table>
+    <?php echo $group->links(); ?>
+
+</div>
+    <script>
+	function ConfirmDelete() {
+	    var r = confirm("This item will be permanently deleted and cannot be recovered. Are you sure?");
+	    if (r == true) {
+	        //txt = "You pressed OK!";
+	    } else {
+	        //txt = "You pressed Cancel!";
+	        return false;
+	    }
+	}
+	</script>
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

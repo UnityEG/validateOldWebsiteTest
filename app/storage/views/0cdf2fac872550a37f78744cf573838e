@@ -1,0 +1,40 @@
+<?php $__env->startSection('main'); ?>
+<div class="forms-back">
+<?php if(is_null($UseTerm)): ?>
+    There are no terms of use.
+<?php else: ?>
+<div align="right"><?php echo link_to_route('UseTerms.index', 'List all terms of use'); ?></div>
+<h2>Term of Use</h2>
+
+<table class="table table-hover list-table">
+	<tr>
+		<th>Term of use</th>
+		<td><?php echo $UseTerm->name; ?></td>
+	</tr>
+</table>
+
+<div class="form-group">
+<?php echo Form::open(array('method' => 'DELETE', 'route' => array('UseTerms.destroy', $UseTerm->id))); ?>
+
+	<a href="<?php echo route('UseTerms.edit', $UseTerm->id); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
+	<?php echo Form::button('<span class="glyphicon glyphicon-trash"></span>',array ('type'=>'submit','class'=>'btn btn-danger', 'onclick'=>'return ConfirmDelete()')); ?>
+
+<?php echo Form::close(); ?>
+
+
+</div>
+</div>
+<script>
+	function ConfirmDelete() {
+	    var r = confirm("This item will be permanently deleted and cannot be recovered. Are you sure?");
+	    if (r == true) {
+	        //txt = "You pressed OK!";
+	    } else {
+	        //txt = "You pressed Cancel!";
+	        return false;
+	    }
+	}
+</script>
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

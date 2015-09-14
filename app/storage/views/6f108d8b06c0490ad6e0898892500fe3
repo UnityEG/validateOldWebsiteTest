@@ -1,0 +1,16 @@
+<?php extract($data); ?>
+
+
+
+<?php $__env->startSection('main'); ?>
+
+<h1>Owner Reports</h1>
+
+<?php echo link_to_route('reports.owner.sales', 'Sales'); ?>
+
+
+
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,75 @@
+<?php $__env->startSection('main'); ?>
+
+<div class="forms-back">
+<p><em>Edit <?php echo ucfirst($owner->first_name); ?>'s profile</em></p>
+<?php echo Form::model($user_info, ['route'=>array('owner.update', $owner->id), 'method'=>'put', 'role'=>'form']); ?>
+
+
+<div class="form-group">
+    <?php echo Form::label('email', 'E-mail: '); ?>
+
+    <?php echo Form::email('email', null, array('class'=>'form-control')); ?>
+
+    <?php echo $errors->first('email', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('password', 'Password'); ?>
+
+    <?php echo Form::password('password', array('class'=>'form-control')); ?>
+
+    <?php echo $errors->first('password', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('password_confirmation', 'Password Confirmation: '); ?>
+
+    <?php echo Form::password('password_confirmation', array('class'=>'form-control')); ?>
+
+    <?php echo $errors->first('password_confirmation', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('first_name', 'First Name:'); ?>
+
+    <?php echo Form::text('first_name', $owner->first_name, array('class'=>'form-control')); ?>
+
+    <?php echo $errors->first('first_name', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('last_name', 'Last Name:'); ?>
+
+    <?php echo Form::text('last_name', $owner->last_name, array('class'=>'form-control')); ?>
+
+    <?php echo $errors->first('last_name', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::select('assign_rules_ids[]', Rule::lists('rule_name', 'id'), $data['active_owner_rules'], array('id'=>'assign_rules', 'class'=>'form-control', 'multiple'=>true, 'data-json'=>false, 'data-title'=>'Permissions')); ?>
+
+    <?php echo $errors->first('assign_rules_ids', '<div class="alert alert-danger">:message</div>'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::submit('Save', array('class'=>'btn btn-primary')); ?>
+
+    <?php echo link_to('owner/'.$owner->id, 'Cancel', array('class'=>'btn btn-danger')); ?>
+
+</div>
+</div>
+
+<script src="<?php echo e(asset('/js/dual-list-box.min.js')); ?>"></script>
+
+<script>
+$("#assign_rules").DualListBox();
+</script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

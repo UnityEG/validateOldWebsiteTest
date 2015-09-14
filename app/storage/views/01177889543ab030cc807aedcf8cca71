@@ -1,0 +1,27 @@
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle='dropdown'>Users<span class="caret"></span></a>
+            <ul class="nav">
+                <li><?php echo link_to_route('owner.index', 'Owners'); ?></li>
+                <li><?php echo link_to_route('admin.index', 'Admins'); ?></li>
+                <li><?php echo link_to_route('customer.index', 'Customers'); ?></li>
+                <li><?php echo link_to_route('merchant.index', 'Merchants'); ?></li>
+                <li><?php echo link_to_route('merchant_manager.index', 'Merchant Managers'); ?></li>
+                <li><?php echo link_to_route('franchisor.index', 'Franchisors'); ?></li>
+                <li><?php echo link_to_route('supplier.index', 'Suppliers'); ?></li>
+            </ul>
+        </li>
+        <li role='separator' class="divider"></li>
+        <li><?php echo link_to_route('rules.index', 'Rules'); ?></li>
+    </ul>
+    
+</li>
+
+<li>
+    <a>Welcome Developer</a>
+</li>
+
+<li>
+    <?php echo link_to_route('logout', 'Logout'); ?>
+
+</li>

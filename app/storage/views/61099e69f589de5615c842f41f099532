@@ -1,0 +1,40 @@
+<?php $__env->startSection('main'); ?>
+<?php if($errors->any()): ?>
+<ul><?php echo implode('', $errors->all('<li class="error">:message</li>')); ?></ul>
+<?php endif; ?>
+<div class="forms-back">
+    <div align="right"><?php echo link_to_route($RouteName.'.index', 'List all Gift Voucher Log'); ?></div>
+    <h1>Validate Gift Voucher</h1>
+    <h2><?php echo g::formatVoucherCode($giftvoucher->qr_code); ?></h2>
+    <h4>This will be use number <?php echo $giftvoucher->used_times + 1; ?> of <?php echo $giftvoucher->parameter->NoOfUses; ?> time(s).</h4>
+    <div class="form-group">
+        <?php echo Form::label('voucher_value', 'Voucher Value:'); ?>
+
+        <?php echo Form::text ('voucher_value', g::formatCurrency($giftvoucher->voucher_value), array('class'=>'form-control', 'disabled')); ?>
+
+    </div>
+    <div class="form-group">
+        <?php echo Form::label('voucher_balance', 'Voucher Balance:'); ?>
+
+        <?php echo Form::text ('voucher_balance', g::formatCurrency($giftvoucher->voucher_balance), array('class'=>'form-control', 'disabled')); ?>
+
+    </div>
+    <?php echo Form::open(array('route' => $RouteName.'.store', 'role' => 'form', 'onsubmit'=>'Validate.disabled = true; Validate.value = "Please wait..."; return true;')); ?>
+
+    <?php echo Form::hidden ('giftvoucher_id', $giftvoucher->id); ?>
+
+    <div class="form-group">
+        <?php echo Form::label('value', 'Value:'); ?>
+
+        <?php echo Form::text ('value', g::formatCurrency($giftvoucher->voucher_balance), array('class'=>'form-control', 'id'=>'value')); ?>
+
+    </div>
+
+    <?php echo Form::submit('Validate', array('class' => 'btn btn-primary', 'name' => 'Validate')); ?>
+
+
+    <?php echo Form::close(); ?>
+
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

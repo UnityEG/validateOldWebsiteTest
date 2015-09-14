@@ -1,0 +1,14 @@
+<li>
+    <?php if(Session::has('facebook_user')): ?>
+    <?php echo link_to_route('customer.show', 'Welcome '.$user_info->first_name.'( as '.Session::get('facebook_user')->facebook_username.' Facebook user )', array($user_info->id)); ?>
+
+    <?php else: ?>
+    <?php echo link_to_route('customer.show', 'Welcome '.$user_info->first_name, array($user_info->id)); ?>
+
+    <?php endif; ?>
+</li>
+<li>
+    <?php echo link_to_route('logout', 'Logout'); ?>
+
+</li>
+

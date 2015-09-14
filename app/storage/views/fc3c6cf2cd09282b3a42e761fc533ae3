@@ -1,0 +1,9 @@
+<?php $__env->startSection('main'); ?>
+<h1>Cart</h1>
+
+<strong>Voucher added to Cart.</strong> 
+You can view your <?php echo link_to_route('Cart.index', 'cart'); ?>, or 
+continue <?php echo link_to_route('GiftVouchersParameters.index', 'purchase'); ?> another voucher.;
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

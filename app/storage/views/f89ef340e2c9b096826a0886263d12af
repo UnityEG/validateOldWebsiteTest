@@ -1,0 +1,96 @@
+<?php $__env->startSection('main'); ?>
+
+<style>
+    #searchResult{
+        display: none;
+        background-color: #CFFCC7;
+        border: 1px solid #aaaaaa;
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        z-index: 1000;
+    }
+    #searchResult div{
+        margin-top: 10px;
+        font-family: Verdana,Arial,sans-serif;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 3px 1em 3px .4em;
+        cursor: pointer;
+        min-height: 0;
+        line-height: 1.7;
+    }
+</style>
+<div class="forms-back">
+<p><a class="btn btn-success" href="<?php echo route('merchant_manager.create'); ?>"><span class="glyphicon glyphicon-user"></span> Create Merchant Manager</a></p>
+
+<h2>Merchant Managers</h2>
+
+<div class="form-group">
+    <input type="search" name="searchKeys" class="form-control input-lg" placeholder="Search for Merchant Manager">
+    <div id="searchResult"></div>
+</div>
+
+<table class="table table-hover list-table">
+	<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Merchant</th>
+		<th>Actions</th>
+    </tr>
+	</thead>
+	<tbody>
+    <?php 
+        foreach ( $group as $item) :
+            $item_info_from_user_table = $item->user()->first();
+            
+            if ( $item_info_from_user_table == null ) {
+                continue;
+            }
+    
+        $item_info_merchant = $item->merchant()->first();
+    ?>
+    <tr>
+        <td>
+            <?php echo link_to_route('merchant_manager.show', ucfirst($item->first_name).' '.$item->last_name, array($item->id)); ?>
+
+        </td>
+        
+        <td><?php echo $item_info_from_user_table->user_type; ?></td>
+        
+        <td>
+            <?php if ( ! (empty($item_info_merchant) || null == $item_info_merchant)): ?>
+            <a href="<?php echo route('merchant.show', $item_info_merchant->id); ?>"><?php echo ucfirst($item_info_merchant->first_name)." ".$item_info_merchant->last_name; ?></a>
+            <?php endif; ?>
+        </td>
+        
+		<td>
+		<a href="<?php echo route('merchant_manager.edit', $item->id); ?>" class="btn btn-primary "><span class="glyphicon glyphicon-edit"></span></a>
+		
+            <?php echo Form::open(array('route'=>array('merchant_manager.destroy', $item->id), 'role'=>'form', 'method'=>'delete')); ?>
+
+            <?php echo Form::button('<span class="glyphicon glyphicon-trash"></span>',array ('type'=>'submit','class'=>'btn btn-danger', 'onclick'=>"return confirm('are you sure you want to delete $item->first_name')")); ?>
+
+            <?php echo Form::close(); ?>
+
+        </td>
+    </tr>
+    
+    <?php endforeach;?>
+    
+</tbody>  
+</table>
+<?php echo $group->links(); ?>
+
+</div>
+<script src="<?php echo asset('js/searchUsers.js'); ?>"></script>
+<script>
+    jQuery("document").ready(function(){
+        searchProcess.url = "<?php echo route('merchant_manager.index'); ?>";
+        searchProcess.searchResult();
+    });//jQuery("document").ready(function()
+</script>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

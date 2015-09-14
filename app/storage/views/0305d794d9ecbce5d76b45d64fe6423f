@@ -1,0 +1,8 @@
+
+<?php $__env->startSection('main'); ?>
+<h1>VALIDATE Control Panel</h1>
+<div style="text-align:center;padding-top:100px;">
+<img src="images\Validate-stamp.png" style="width:50%;text-align:center;">
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

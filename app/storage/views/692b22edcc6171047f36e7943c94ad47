@@ -1,0 +1,43 @@
+<?php $__env->startSection('main'); ?>
+<div class="forms-back">
+<p><?php echo link_to_route('merchant_manager.create', 'Create new Merchant Manager'); ?></p>
+
+<h3><?php echo $item->first_name.' '.$item->last_name; ?>'s profile</h3>
+
+<table class="table table-hover list-table">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Merchant</th>
+        <th>Actions</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><?php echo ucfirst($item->first_name).' '.$item->last_name; ?></td>
+        <td><?php echo link_to_route('merchant_manager.index',$item_info_user->user_type); ?></td>
+         
+        <td>
+            <?php if ( ! (empty($item_info_merchant) || null == $item_info_merchant)): ?>
+            <?php echo link_to_route('merchant.show', ucfirst($item_info_merchant->first_name).' '.$item_info_merchant->last_name, array($item_info_merchant->id)); ?>
+
+            <?php endif; ?>
+        </td>
+		<td>
+		<a href="<?php echo route('merchant_manager.edit', $item->id); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
+		
+            <?php echo Form::open(array('route'=>array('merchant_manager.destroy', $item->id), 'method'=>'delete', 'role'=>'form')); ?>
+
+            <?php echo Form::button('<span class="glyphicon glyphicon-trash"></span>',array ('type'=>'submit','class'=>'btn btn-danger', 'onclick'=>"return confirm('are you sure you want to delete $item->first_name $item->last_name?')")); ?>
+
+            <?php echo Form::close(); ?>
+
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

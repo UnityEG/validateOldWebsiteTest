@@ -1,0 +1,90 @@
+<?php $__env->startSection('main'); ?>
+<div class="forms-back">
+    <p><a class="btn btn-success" href="<?php echo route('UseTerms.create'); ?>"><span class="glyphicon glyphicon-plus"></span> Add New Term Of Use</a>
+        <button id="opener" class="btn btn-default">Reorder Terms List</button>
+    </p>
+
+    <h2>All terms of use</h2>
+
+    <?php if(!$UseTerms->count()): ?>
+    There are no term of use
+    <?php else: ?>
+    <table class="table table-hover list-table">
+        <thead>
+            <tr>
+                <th>Term of use</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($UseTerms as $UseTerm): ?>
+            <tr>
+                <td><?php echo link_to_route('UseTerms.show', $UseTerm->name, array($UseTerm->id)); ?></td>
+                <td>
+                    <a href="<?php echo route('UseTerms.edit', $UseTerm->id); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
+                    <?php echo Form::open(array('method' => 'DELETE', 'route' => array('UseTerms.destroy', $UseTerm->id))); ?>
+
+                    <?php echo Form::button('<span class="glyphicon glyphicon-trash"></span>',array ('type'=>'submit','class'=>'btn btn-danger', 'onclick'=>'return ConfirmDelete()')); ?>
+
+                    <?php echo Form::close(); ?>
+
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <?php /* $UseTerms->links() */ ?>
+</div>
+<script>
+    $(function () {
+        $("#dialog").dialog({
+            width: "40%",
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 500
+            },
+            hide: {
+                effect: "blind",
+                duration: 500
+            },
+            close: function (event, ui) {
+                location.reload();
+            }
+        });
+
+        $("#opener").click(function () {
+            $("#dialog").dialog("open");
+        });
+
+        $("#sortable").sortable({opacity: 0.8, cursor: 'move', update: function () {
+                var NewListOrder = $(this).sortable("serialize");
+                $.post("UseTerms/UpdateListOrder", NewListOrder, function (theResponse) {
+
+                });
+//                alert(order);
+            }});
+        $("#sortable").disableSelection();
+    });
+</script>
+<div id="dialog" title="Reorder Terms List">
+    <ul id="sortable">
+        <?php foreach($UseTerms as $UseTerm): ?>
+        <li id="NewListOrder_<?php echo $UseTerm->id; ?>"><?php echo $UseTerm->name; ?></li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+<script>
+    function ConfirmDelete() {
+        var r = confirm("This item will be permanently deleted and cannot be recovered. Are you sure?");
+        if (r == true) {
+            //txt = "You pressed OK!";
+        } else {
+            //txt = "You pressed Cancel!";
+            return false;
+        }
+    }
+</script>
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,31 @@
+<?php $__env->startSection('main'); ?>
+<div class="forms-back">
+<table class="table table-hover list-table">
+	<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+		<th>Actions</th>
+    </tr>
+	</thead>
+	<tbody>
+    <tr>
+        <td><?php echo e($user_info->first_name.' '.$user_info->last_name); ?></td>
+       <td><?php echo link_to($user->user_type, $user->user_type); ?></td>
+		<td>
+		<a href="<?php echo route($user->user_type.'.edit', $user_info->id); ?>" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
+		
+            <?php echo Form::open(['url'=>route($user->user_type.'.destroy', $user_info->id), 'method'=>'delete']); ?>
+
+            <?php echo Form::button('<span class="glyphicon glyphicon-trash"></span>',array ('type'=>'submit','class'=>'btn btn-danger', 'onclick'=>'return confirm("are you sure you want to delete '.$user_info->name.'?")')); ?>
+
+            <?php echo Form::close(); ?>
+
+        </td>
+    </tr>
+	</tbody>
+</table>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

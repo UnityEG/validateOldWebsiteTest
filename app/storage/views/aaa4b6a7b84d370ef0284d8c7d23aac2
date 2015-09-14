@@ -1,0 +1,42 @@
+<?php $__env->startSection('main'); ?>
+<h1>All users</h1>
+<table class="table table-striped table-bordered table-hover">
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+    </tr>
+    
+    <?php
+    foreach($users as $user):
+    $outside_info = $user->user_type;
+    $user_info    = $user->$outside_info()->first();
+    if($outside_info == null || $user_info == null){
+        continue;
+    }
+    ?>
+    <tr>
+        <td><a href="<?php echo route($user->user_type.'.show', $user_info->id); ?>"><?php echo $user_info->first_name.' '.$user_info->last_name; ?></a></td>
+        
+        <?php if($user->user_type == 'owner'): ?>
+        <td>Owner</td>
+        <?php else: ?>
+        <td><?php echo link_to($user->user_type, $user->user_type); ?></td>
+        <?php endif; ?>
+        <td><a href="<?php echo route($user->user_type.'.edit', $user_info->id); ?>" class="btn btn-primary">Edit</a></td>
+        <td>
+            <?php echo Form::open(['url'=>$user->user_type.'/'.$user_info->id, 'method'=>'delete']); ?>
+
+            <?php echo Form::submit('Delete', ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Are you sure you want to delete '.$user->email.' ?")']); ?>
+
+            <?php echo Form::close(); ?>
+
+        </td>
+    </tr>
+    <?php endforeach;?>
+    
+</table>
+<?php echo $users->links(); ?>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

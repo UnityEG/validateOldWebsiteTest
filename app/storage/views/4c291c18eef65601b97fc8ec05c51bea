@@ -1,0 +1,36 @@
+<li class="dropdown"><a id="dLabel"  data-target="#" href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<span class="caret"></span></a>
+    <ul class="dropdown-menu multi-level">
+        <li class="dropdown-submenu"><a href="#" tabindex="-1">Users</a>
+            <ul class="dropdown-menu">
+                <li><?php echo link_to_route('owner.index', 'Owners'); ?></li>
+                <li><?php echo link_to_route('admin.index', 'Admins'); ?></li>
+                <li><?php echo link_to_route('customer.index', 'Customers'); ?></li>
+                <li><?php echo link_to_route('merchant.index', 'Merchants'); ?></li>
+                <li><?php echo link_to_route('merchant_manager.index', 'Merchant Managers'); ?></li>
+                <li><?php echo link_to_route('franchisor.index', 'Franchisors'); ?></li>
+                <li><?php echo link_to_route('supplier.index', 'Suppliers'); ?></li>
+            </ul>
+        </li>
+        <li role='separator' class="divider"></li>
+        <li><?php echo link_to_route('rules.index', 'Rules'); ?></li>
+        <li role="separator" class="divider"></li>
+        <li><?php echo link_to_route('userpics.index', 'Images'); ?></li>
+        <li role="separator" class="divider"></li>
+        <li class="dropdown-submenu"><a href="#" tabindex="-1">Admins</a>
+            <ul class="dropdown-menu">
+                <li><?php echo link_to('Industrys', 'Industries'); ?></li>
+                <li><?php echo link_to('UseTerms', 'Terms of Use'); ?></li> 
+            </ul>
+        </li>
+    </ul>
+    
+</li>
+
+<li>
+    <a>Welcome Developer</a>
+</li>
+
+<li>
+    <?php echo link_to_route('logout', 'Logout'); ?>
+
+</li>

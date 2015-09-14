@@ -1,0 +1,11 @@
+<?php extract($data); ?>
+
+
+<?php $__env->startSection('main'); ?>
+
+<h1>Welcome to the Reports page</h1>
+<p><?php echo link_to_route('reports.merchant.active_vouchers', 'Active Vouchers Report', array($merchant->id)); ?></p>
+
+<p><?php echo link_to_route('reports.merchant.validations', 'Validations Report', array($merchant->id)); ?></p>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

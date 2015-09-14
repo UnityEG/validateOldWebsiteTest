@@ -1,0 +1,40 @@
+<?php $__env->startSection('main'); ?>
+<h2>Log in</h2>
+<?php echo Form::open(['url'=>'login', 'role' => 'form']); ?>
+
+<div class="form-group">
+    <?php echo Form::label('email', 'Email '); ?>
+
+	<div class="input-group" style="width:50%;">
+    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+    <?php echo Form::email('email', null, array('class'=>'form-control')); ?>
+
+	</div>
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('password', 'Password'); ?>
+
+	<div class="input-group" style="width:50%;">
+    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+    <?php echo Form::password('password', array('class'=>'form-control')); ?>
+
+	</div>
+</div>
+
+<div class="form-group">
+    <?php echo Form::label('remember_me', 'Remember Me:'); ?>
+
+    <?php echo Form::input('checkbox', 'remember_me'); ?>
+
+</div>
+
+<div class="form-group">
+    <?php echo Form::submit('Login',array('class'=>'btn btn-primary')); ?> 	
+</div>
+<a href="<?php echo action("RemindersController@getRemind"); ?>">Forgot your password?</a> <br/><br/>
+<a href="<?php echo URL::to('login/face'); ?>" class=" btn btn-facebook pull-left"><i class="fa fa-facebook"></i> | Login with Facebook</a>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

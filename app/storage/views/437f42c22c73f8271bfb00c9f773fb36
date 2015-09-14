@@ -1,0 +1,61 @@
+<?php $__env->startSection('main'); ?>
+
+<h1>Cart</h1>
+<?php if(!Cart::count()): ?>
+The Cart is empty. You can start <?php echo link_to_route('GiftVouchersParameters.index', 'purchase'); ?> vouchers.
+<?php else: ?>
+
+<?php echo Form::open(array('method' => 'POST', 'route' => array('payment.post'))); ?>
+
+<?php echo Form::submit('Checkout', array('class' => 'btn btn-danger')); ?>
+
+<?php echo Form::close(); ?>
+
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Voucher</th>
+            <th>Qty</th>
+            <th>Value</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach(Cart::content() as $row): ?>
+        <tr>
+            <td><?php echo $row->name; ?> <?php echo $row->options->size; ?></td>
+            <td><?php echo $row->qty; ?></td>
+            <td><?php echo g::formatCurrency($row->price); ?></td>
+            <td><?php echo g::formatCurrency($row->subtotal); ?></td>
+        </tr>
+        <?php endforeach; ?>
+        <tr>
+            <th colspan="3"></th>
+            <th><?php echo g::formatCurrency(Cart::total()); ?></th>
+        </tr>
+    </tbody>
+</table>
+
+<?php echo Form::open(array('method' => 'DELETE', 'route' => array('Cart.destroy', 1))); ?>
+
+<?php echo Form::submit('Clear Cart', array('class' => 'btn btn-danger', 'onclick' => 'return ConfirmMsg("This will be permanently clear the cart and cannot be recovered. Are you sure?")')); ?>
+
+<?php echo Form::close(); ?>
+
+
+
+<script>
+    function ConfirmMsg(msg) {
+        var r = confirm(msg);
+        if (r == true) {
+            //txt = "You pressed OK!";
+        } else {
+            //txt = "You pressed Cancel!";
+            return false;
+        }
+    }
+</script>
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
